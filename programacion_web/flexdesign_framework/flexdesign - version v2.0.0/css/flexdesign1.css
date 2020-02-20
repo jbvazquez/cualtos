@@ -1,0 +1,924 @@
+/*
+Fuente Fontin Sans Regular
+*/
+@font-face { font-family: Fontin Sans Regular; src: url('fonts/Fontin_Sans_R_45b.otf'); } 
+/* Es necesario incluirlo: 
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+*/
+*{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box ;
+	-moz-box-sizing: border-box ;
+	-ms-box-sizing: border-box ;
+	-o-box-sizing: border-box ;
+	box-sizing: border-box ;
+}
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+/* Tipografía  <h1> a <h5>*/
+h1{
+	display: block;
+    font-size: 2.5rem; /* (40px) */
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Fontin Sans Regular;
+}
+h2{
+	display: block;
+    font-size: 2rem; /* (32px) */
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Fontin Sans Regular;
+}
+h3{
+	display: block;
+    font-size: 1.75rem; /* (28px) */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: Fontin Sans Regular;
+}
+h4{
+	display: block;
+    font-size: 1em; /* (24px) */
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Fontin Sans Regular;
+}
+h5{
+	 display: block;
+    font-size: .1.5rem; /* (20px) */
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: Fontin Sans Regular;
+}
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p.capital::first-letter{
+    font-size: 200%;
+    color: #062F4F;
+}
+
+/*Letra capital (pseudoelemento en clase*/
+p[data-color='black']{
+    color: #000000!important;
+}
+/* atributo perzonalizado aplicado al color del texto*/
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+text-align: justify;
+}
+.strong { 
+    font-weight: bold;
+}
+/* Colores de Fondo*/
+.bg-default{
+	background-color: #FFF;
+	color: #000000!important;
+}
+.bg-black{
+	background-color: #000000;
+	color: #FFF!important;
+}
+
+.bg-ink, .bg-purple, .bg-orange{
+    color: #FFF!important;
+}
+.bg-ink{
+	background-color: #062F4F;
+}
+.bg-purple{
+	background-color: #913772;
+}
+.bg-orange{
+	background-color: #B82601;
+}
+/* Colores Texto */
+.text-default{
+     color: #31708F;
+}
+.text-success{
+color: #004D40;
+}
+.text-warning{
+color: #DD2C00;
+}
+.text-info{
+
+color: #F57F17;
+}
+.text-danger{
+    color: #D50000;
+
+}
+.text-muted {
+    color: #636c72!important;
+}
+.text-black{
+	color: #000000!important;
+}
+.text-white{
+	color: #FFF!important;
+}
+.text-ink{
+	color: #062F4F!important;
+}
+.text-purple{
+	color: #FFF!important;
+}
+.text-orange{
+	color: #B82601!important;
+}
+a{
+	text-decoration: none;
+    color: black!important;
+}
+a:hover{
+    color: #636c72!important;
+}
+.link-white{
+	text-decoration: none;
+	color: #fff!important;
+}
+.link-black{
+	text-decoration: none;
+	color: #111111!important;
+}
+.link-ink{
+    text-decoration: none;
+    color: #062F4F!important;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+/* Boton menú responsivo no visible */
+.navbar .navbar-toggle{
+	display: none;
+}
+/* Logo Barra de Navegacion */
+.navbar .navbar-logo{
+	float: left;
+	text-decoration: none;
+	padding: 16px;
+    color: black!important;
+	font-family: Fontin Sans Regular;
+}
+/* Contenido barra de navegacion nav ul */
+.navbar .navbar-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    color: #636c72;
+    float: right; 
+}
+/* nav ul li */
+.navbar .navbar-nav .nav-item {
+   display: inline-block;
+   margin-left: -4px;
+}
+/* nav ul li a */
+.navbar .navbar-nav .nav-item .nav-link{
+    display: block;
+    color: #636c72!important;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+/* nav ul li a active */
+.navbar .navbar-nav .nav-item .nav-link.active {
+    background-color: #ddd!important;
+    color: black!important;
+}
+/*nav ul li a:hover*/
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    background-color: #ddd!important;
+    color: black!important;
+}
+/* Fin barra de navegacion */
+/* Barra de Navegacion Responsiva */
+@media screen and (max-width: 600px) {
+    .navbar a.navbar-logo{
+        text-align: left; 
+        float: left;
+    }
+    .navbar button.navbar-toggle{
+        display: block; 
+        float: right; 
+        text-align: center;
+        text-decoration: none;
+        padding: 16px 20px;
+        color: black!important;
+    }
+    .navbar ul.navbar-nav{
+        width: 100%; 
+        display: block; 
+    }
+      .navbar ul.navbar-nav .nav-item{
+        display: block;
+      }
+}
+
+.container{
+	margin: 0 auto; /* centrar contenedor*/
+	width: 100%;
+}
+.div-center{
+    text-align: center;
+    align-content: center;
+}
+.mid-container-left{
+    margin: 0 auto; /* centrar contenedor*/
+    width: 50%;
+    float: left;
+}
+.mid-container-right{
+    margin: 0 auto; /* centrar contenedor*/
+    width: 50%;
+    float: right;
+}
+.column-left{ 
+    margin: 0 auto; /* centrar contenedor*/
+    float: left; 
+    width: 33%; 
+    background: #f8f8f8;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+.column-center{ 
+    margin: 0 auto; /* centrar contenedor*/
+    float: left;
+    width: 33%; 
+    background: #f8f8f8;
+    margin: 0px 5px 5px 5px;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+.column-right{ 
+    margin: 0 auto; /* centrar contenedor*/
+    float: right; 
+    width: 33%; 
+    background: #f8f8f8;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+/* Media Query Smartphone Columnas */
+@media screen and (max-width: 1024px) {
+    .column-left{
+        margin: 0 auto;
+        float: left;
+        width: 49%;
+        height: auto;
+        margin-bottom: 5px;
+   }
+   .column-left h2{
+        text-align: center;
+   }
+   .column-center{
+        margin: 0 auto;
+        float: right;
+        width: 50%;
+        height: auto;
+        margin-bottom: 5px;
+   }
+   .column-center h2{
+        text-align: center;
+   }
+    .column-right{
+        float: none;
+        clear: both;
+        width: auto;
+        height: auto;
+        margin-bottom: 5px;
+   }
+   .column-right h2{
+        text-align: center;
+   }
+
+}
+@media screen and (max-width: 600px) {
+   .column-left{
+        float: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+   }
+   .column-right{
+        float: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+   }
+   .column-center{
+        float: none;
+        width: auto;
+        height: auto;
+        text-align: center; 
+   }
+}
+.header{
+	width: 100%;
+	background: #062F4F;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+
+/* Footer */
+.footer{
+    clear: both;
+	display: block;
+	width: 100%;
+	background: #111111;
+	bottom: 0;
+	margin-bottom: 0;
+	padding: 30px;
+	color: white;
+	text-align: center;
+}
+.footer .footer-brand{
+	display: block;
+    font-size: 2rem; /* (32px) */
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Fontin Sans Regular;
+}
+
+.footer .footer-menu{
+    list-style-type: none;
+}
+.footer .text{
+	text-align: center;
+}
+.footer .footer-menu .item{ 
+	display: inline; 
+	list-style-type: none;
+	color: #fff!important;
+	text-decoration: none;
+	padding: 10px;
+}
+.footer .footer-menu .item .link-white:hover{ 
+	color: #636c72!important;
+}
+/* Formularios */
+form, .form{
+    margin-bottom: 20px;
+     border-radius: 4px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80%;
+    border:solid 1px #636c72; 
+    display: block;
+
+}
+form .form-header, .form .form-header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #636c72;
+    padding: 8px;
+    color: black;
+}
+/* Aplica las reglas a todos los elementos dentro del formulario*/
+form>.form-field{
+
+text-align: center;
+display: block;
+clear: both;
+width: 100%;
+padding-bottom: 10px;
+padding: 20px;
+color: black;
+
+}
+
+/*Texarea*/
+textarea, .textarea{
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    color: black; 
+    border: 1px solid #636c72;
+    text-align: justify;
+    font-size: 16px;
+}
+.textarea.textarea-vertical{
+    resize: vertical;
+    overflow: auto;
+}
+.textarea.textarea-horizontal{
+    resize: horizontal;
+    overflow: auto;
+}
+.textarea.textarea-no-resize{
+    resize: none;
+}
+/* Botones */
+button, .button-default {
+    border-radius: 4px;
+    background-color: #fff;
+    color: black; 
+    border: 1px solid #636c72;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+
+button:hover, .button-default:hover{
+background-color: #636c72;
+}
+.button-default-black-hover:hover{
+    background-color: black;
+    color: #fff;
+}
+/* Inputs */
+.label{
+display: block;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+}
+.input  {
+     border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    
+    width: 100%;
+    padding: 12px 20px;
+  
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #636c72;
+}
+ .input:hover{
+    border-color #062F4F;
+
+}
+.input:focus{
+    box-shadow: 0 0 10px #062F4F;
+}
+
+/*Radio*/
+.radio {
+    margin: 0 auto;
+    display:inline-block; 
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+/*Checkbox*/
+.checkbox {
+    
+    margin: 0 auto;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.check {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .check {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .check {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .check:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*alertas*/
+.alert-default {
+    padding: 10px;
+    margin: 20px;
+   
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    overflow: auto;
+}
+.alert-warning {
+    padding: 10px;
+    margin: 20px;
+    color: #31708F;
+    background-color: #FF9100;
+    border-color: #fff;
+    border-radius: 4px;
+    overflow: auto;
+}
+.alert-success {
+    padding: 10px;
+    margin: 20px;
+    color: #31708F;
+    background-color: #1DE9B6;
+    border-color: #fff;
+    border-radius: 4px;
+    overflow: auto;
+}
+.alert-info {
+    padding: 10px;
+    margin: 20px;
+    color: #31708F;
+    background-color: #FFEA00;
+    border-color: #fff;
+    border-radius: 4px;
+    overflow: auto;
+}
+.alert-danger {
+    padding: 10px;
+    margin: 20px;
+    color: #31708F;
+    background-color: #F44336;
+    border-color: #fff;
+    border-radius: 4px;
+    overflow: auto;
+}
+.closebtn {
+    margin-left: 15px;
+    color: blue;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*scroll*/
+.scrollToTop-autohidden{
+    visibility: hidden;
+}
+.scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #913772;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.scrollToTop:hover {
+  background-color: #555;
+}
+
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+/* Secciones */
+section, .section { 
+    padding-bottom: 0.83em;
+    margin: 0 auto; /* centrar contenedor*/
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    overflow:auto; /*  Para prevenir colapso de margenes */
+}
+
+/* Parallax */
+section .parallax, .section .parallax { 
+    overflow:auto; /*  Para prevenir colapso de margenes */
+    /* The image used */
+    background-image: url("../image/img_parallax.jpg");
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+/* Imagenes */
+a img:hover {
+    filter: grayscale(80%);
+}
+
+.img-thumbnail{
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+}
+.img-card{
+    border-radius: 8px;
+    width: 100%;
+    max-height: auto;
+    box-shadow: 0 0 2px 1px #062F4F;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+.img-center{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.img-logo{
+    height: 220px;
+    width: 250px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+/* Aside flotante lado derecho */
+aside, .aside { 
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 250px;
+}
+
+aside ul{
+    margin: 10px;
+}
+aside li{
+    list-style: none;
+    padding: 8px;
+}
+aside ul li:hover{
+    background-color: #ddd;
+}
+aside ul ul .sub-item{
+    padding: 8px;
+    width: 100%;
+}
+aside ul ul .sub-item:hover{
+    background-color: #ddd!important;
+}
+aside ul li ul li:hover {
+    background-color: #ddd;
+    width: 100%;
+    text-decoration:none;
+}
+aside ul li a:link{
+    text-decoration:none;
+    color: black!important;
+}
+aside ul li a:visited{
+    color: black!important;
+    background-color: black!important;
+}
+
+/* Aside Responsivo */
+@media screen and (max-width: 600px) {
+    aside{
+       border-top:solid 2px black; 
+        display: block;
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        display:inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.menu-left{
+    width: 20%;
+    min-width: 300px;
+    float: left;
+}
+.content-menu{
+    float: right;
+    width: 80%;
+    border: solid rgba(211, 211, 211, .5);
+    border-width: 0 0 0 3px;
+  /*  background-color: rgba(211, 211, 211, .5);*/
+}
+
+@media screen and (max-width: 600px) {
+    .menu-left{
+        width: 100%;
+        float: none;
+    }
+    .content-menu{
+        width: 100%;
+        float: none;
+        border-top:5px solid rgba(211, 211, 211, .5);
+    }
+    .menu-list{
+        text-align: center;
+    }
+
+}
+/* Lista de menu-left o menu-right */
+.menu-list{
+    width: 100%;
+    padding: 8px;
+    text-decoration: none;
+}
+.menu-list > .sub-list {
+    margin-left: 10px;
+}
+.menu-list li {
+    list-style: none;
+    padding: 8px;
+}
+.menu-list li:hover{
+    background-color: #ddd;
+}
+.menu-list .sub-list{
+    list-style: none;
+    padding: 8px;
+}
+hr{
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+.highlight {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f7f7f9;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}   
+code{
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #bd4147;
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="image/favicon.png">
+	<title>Flex Desing - Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/flexdesign.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<nav id="navbar" class="navbar">
+		<a class="navbar-logo" href="./">Flex Desing</a>
+		<button type="button" class="navbar-toggle"><i class="fa fa-bars" aria-hidden="true"></i><span class="navbar-toggler-icon"></span></button>
+		<div class="navbar-collapse"> 	
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link active" href="./">Inicio</a></li>
+				<li class="nav-item"><a class="nav-link" href="documentacion/">Documentación</a></li>
+				<li class="nav-item"><a class="nav-link" href="demo/">Demo</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header id="inicio" class="header">
+
+		<h1>Flex Design</h1>
+	</header>
+	<div class="section">
+		<div class="mid-container-left">
+			<article class="article">
+			<h1>Flex Desing</h1>
+			<p><strong>Fácil, rápido y flexible.</strong><br>
+			Flex Design, el framework CSS con capacidad responsiva incorporada de código abierto para diseño de sitios web incorporando extensiones de javascript y edición de CSS.</p>
+			<button class="button-default-black-hover"><a href="flexdesign-v1.0.0.rar" target="_blank" class="link-ink">Descargar</a></button>
+			<button class="button-default"><a href="documentacion/">Inciar</a></button>
+			<p class="text-muted">Versión actual v1.0.0</p>
+			</article>
+		</div>
+		<div class="mid-container-right">
+			<a href="#">  <img class="img-logo img-center" src="image/logo.png"></a>
+		</div>
+		
+	</div>
+	<div class="section bg-black">
+		<div class="container">
+			<div class="column-left">
+				<h2 class="text-black">Instalación</h2>
+				<p data-color="black" class="text-justify capital">
+					Copia y pega en tu encabezado <code>&lt;head&gt;</code> para cargar nuestro CSS.</p>
+				<div class="highlight">
+					<code id="estiloscode">
+					&lt;!-- jQuery --&gt; <br>
+					&lt;script src="../js/jquery-3.2.1.min.js"&gt;&lt;/script&gt; <br>
+					&lt;!-- FlexDesign --&gt; <br>
+					&lt;link rel="stylesheet" type="text/css" href="css/flexdesign.css"&gt; <br>
+					&lt;script src="js/flexdesign.js"&gt;&lt;/script&gt; <br>
+					&lt;!-- Font Awesome --&gt; <br>
+					&lt;link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css"&gt; <br>
+					</code>
+					<p><a href="#" class="select-text text-muted" data-selector="#estiloscode">Seleccionar Todo</a></p>
+				</div>
+			</div>
+			</div>
+			<div class="column-center">
+				<h2 class="text-black">Requerimientos</h2>
+				<img src="" alt="">
+				<img class="img-responsive" src="image/requerimientos.jpg" alt="Imagen Requerimientos">
+				<p class="text-black text-justify capital">Flex Design emplea múltiples estilos y configuraciones globales importantes que deberá tener en cuenta al usarlo, los cuales están orientados casi exclusivamente a la normalización de estilos de navegador cruzado.</p>
+			</div>
+			<div class="column-right">
+				<h2 class="text-black">Ejemplo</h2>
+				<a href="ejemplos/"><img src="image/plantilla1.png" alt="Plantilla 1" class="img-thumbnail img-center"></a>
+				<p class="text-black text-justify capital">Plantilla inicial..</p>
+			</div>
+		</div>
+	<footer id="footer">
+		<p class="footer-brand">Flex Desing</p>
+		<p>Flex Desing Desarrollado con <i class="fa fa-heart" aria-hidden="true"></i> por Pepe e Iván &copy; 2017</p>
+		<ul class="footer-menu">
+			<li class="item"><a href="./" class="link-white">Inicio</a></li>
+			<li class="item"><a href="documentacion/" class="link-white">Documentación</a></li>
+			<li class="item"><a href="demo/" class="link-white">Demo</a></li>
+		</ul>
+		<button name="button" id="myBtn" class="scrollToTop fa fa-chevron-up" aria-hidden="true"></button>
+	</footer>
+	<script src="js/flexdesign.js"></script>
+</body>
+</html>

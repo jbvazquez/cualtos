@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="../image/favicon.png">
+	<title>Flex Desing - Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../css/flexdesign.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body data-blur=true>
+	<nav id="navbar" class="navbar">
+		<a class="navbar-logo" href="../">Flex Desing</a>
+		<button type="button" class="navbar-toggle"><i class="fa fa-bars" aria-hidden="true"></i><span class="navbar-toggler-icon"></span></button>
+		<div class="navbar-collapse"> 	
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>
+				<li class="nav-item"><a class="nav-link active" href="documentacion/">Documentación</a></li>
+				<li class="nav-item"><a class="nav-link" href="../ejemplos/">Ejemplos</a></li>
+				<li class="nav-item"><a class="nav-link" href="../demo/">Demo</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header id="inicio" class="header">
+		<h1>Flex Design</h1>
+	</header>
+	<div class="container">
+		<div class="menu-left">
+			<ul class="menu-list">
+				<li><a href="#introduccion">Introducción</a></li>
+				<ul class="sub-list">
+					<li><a href="#globales">Globales</a></li>
+					<li><a href="#html">HTML5</a></li>
+					<li><a href="#meta">Meta Tag</a></li>
+					<li><a href="#iconos">Iconos</a></li>
+					<li><a href="#js">Javascript</a></li>
+				</ul>
+				<li><a href="#descargas">Descargas</a></li>
+				<li><a  href="#iniciorapido">Inicio Rápido</a></li>
+				<ul class="sub-list"> 
+					<li><a href="#estilos">CSS</a></li>
+					<li><a href="#script">JS</a></li>
+					<li><a href="#plantillas">Plantillas</a></li>
+				</ul>
+				<li><a href="#diseno">Diseño</a></li>
+				<ul class="sub-list">
+					<li><a href="">Contenedores</a></li>
+				</ul>
+				<li><a href="#contenido">Contenido</a></li>
+				<ul class="sub-list">
+					<li><a href="#tipografia">Tipografía</a></li>
+					<li><a href="#fuentes">Fuentes</a></li>
+					<li><a href="#parrafos">Párrafos</a></li>
+					<li><a href="#imagenes">Imágenes</a></li>
+				</ul>
+				<li><a href="#componentes">Componentes</a></li>
+				<ul class="sub-list">
+					<li><a href="#">Alertas</a></li>
+				</ul>
+				<li><a href="#utilidades">Utilidades</a></li>
+			</ul>
+		</div>
+		<div class="content-menu">
+			<div class="section" id="introduccion">
+				<h3>Introducción</h3>
+				<p>Comience con Flex Design, el framework CSS con capacidad responsiva incorporada de código abierto para diseño de sitios web incorporando extensiones de javascript y edición de CSS.</p>
+				<div class="section" id="globales">
+					<h4>Globales Importantes</h4>
+					<p>Flex Design emplea múltiples estilos y configuraciones globales importantes que deberá tener en cuenta al usarlo, los cuales están orientados casi exclusivamente a la normalización de estilos de navegador cruzado.
+					</p>
+					<h4 id="html">HTML5 doctype</h4>
+					<p>Flex Design requiere el uso del doctype HTML5. Sin él, verás un estilo incompleto, el incluirlo no debería causar ningún contratiempo.</p>
+					<div class="highlight">
+						<code>
+							&lt;!doctype html&gt; <br>
+							&lt;html lang="en"&gt; <br>
+							... <br>
+							&lt;/html&gt; <br>
+						</code>
+					</div>
+					<h4 id="meta">Metaetiqueta responsiva</h4>
+					<p>Para garantizar una reproducción adecuada y un zoom táctil para todos los dispositivos, agregue la metaetiqueta <code>&lt;meta&gt;</code> a su <code>&lt;head&gt;</code>. en todas sus páginas web: </p>
+					<div class="highlight">
+						<code>
+							&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+						</code>
+					</div>
+					<h4  id="iconos">Font Awesome</h4>
+					<p>Font Awesome te ofrece iconos vectoriales escalables que se pueden personalizar al instante: tamaño, color, sombra paralela y cualquier cosa que se pueda hacer con el poder de CSS.
+					</p>
+					<p><a href="http://fontawesome.io/" class="link-ink">Descargar Font Awesome</a></p>
+					<h4 id="js">Javascript</h4>
+					<p>Muchos de nuestros componentes requieren el uso de JavaScript para funcionar. <br>
+						Específicamente, requieren <a href="https://jquery.com/">jQuery</a>.<br>
+					Usamos la compilación delgada de jQuery, pero la versión completa también es compatible.</p>
+					<div class="highlight">
+						<code id="scriptcode"><br>
+							&lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+							&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+							&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"&gt;&lt;/script&gt;<br>
+						</code>
+						<p><a href="#" class="select-text text-muted" data-selector="#scriptcode">Seleccionar Todo</a></p>
+					</div>
+					<hr>
+				</div>
+			</div>
+			<div class="section" id="descargas">
+				<h3>Descargas</h3>
+				<p><a href="../js/flexdesign.js" target="_blank" class="link-ink">Descargar Flex Design JS</a></p>
+				<p><a href="../css/flexdesign.css" target="_blank" class="link-ink">Descargar Flex Design CSS</a></p>
+				<p><a href="../flexdesign-v1.0.0.rar" target="_blank" class="link-ink">Descargar Flex Design Full</a></p>
+			</div>
+			<div class="section" id="iniciorapido">
+				<h3>Inicio Rápido</h3>
+				<p>Por el momento no contamos con CDN, necesitas descargar los componentes del framework para empezar utilizarlo.</p>
+			</div>
+			<div class="section" id="estilos">
+				<h3>Estilos</h3>
+				<p>Copia y pega el enlace de estilos <code>&lt;link&gt;</code>en tu encabezado <code>&lt;head&gt;</code> antes de todas las hojas de estilo CSS para cargar nuestro CSS.</p>
+				<div class="highlight">
+					<code id="estiloscode">
+						&lt;link rel="stylesheet" type="text/css" href="../css/flexdesign.css"&gt;
+					</code>
+					<p><a href="#" class="select-text text-muted" data-selector="#estiloscode">Seleccionar Todo</a></p>
+				</div>
+			</div>
+			<div class="section" id="script">
+				<h3>Javascript</h3>
+				<p>Copia y pega el script externo de javascript <code>&lt;script&gt;</code>en tu encabezado  o al final del <code>&lt;body&gt;</code> y dale vida a Flex Design con nuestros complementos JavaScript opcionales creados en javascript-jQuery.</p>
+				<div class="highlight">
+					<code id="estiloscode">
+						&lt;script src="../js/flexdesign.js"&gt;&lt;/script>&gt;
+					</code>
+					<p><a href="#" class="select-text text-muted" data-selector="#estiloscode">Seleccionar Todo</a></p>
+				</div>
+			</div>
+			<div class="section" id="plantillas">
+				<h3>Plantillas</h3>
+				<a href="../ejemplos/"><img src="../image/plantilla1.png" alt="Plantilla 1" class="img-thumbnail"></a>
+				<div class="highlight">
+					<code id="plantillacode1">
+						&lt;!DOCTYPE html&gt; <br>
+						&lt;html lang="en"&gt; <br>
+						&lt;head&gt; <br>
+						&lt;meta charset="UTF-8"&gt;
+						&lt;meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"&gt; <br>
+						&lt;link rel="stylesheet" type="text/css" href="../css/flexdesign.css"&gt; <br>
+						&lt;link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"&gt; <br>
+						&lt;script src="../js/jquery-3.2.1.min.js"&gt;&lt;/script&gt; <br>
+						&lt;script src="../js/flexdesign.js"&gt;&lt;/script&gt; <br>
+						&lt;link rel="icon" href="../image/favicon.png"&gt; <br>
+						&lt;title&gt;Document&lt;/title&gt; <br>
+						&lt;/head&gt; <br>
+						&lt;body&gt; <br>
+						&lt;div class="container"&gt; <br>
+						&lt;section class="section"&gt; <br>
+						&lt;h1&gt;Hello World&lt;/h1&gt; <br>
+						&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolore quod, incidunt impedit aliquam, eaque deserunt, beatae quos vitae, nobis cum sint qui rem optio quam porro accusamus nihil quo!&lt;/p&gt; <br>
+						&lt;/section&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;/body&gt; <br>
+						&lt;/html&gt; <br>
+					</code>
+				</div>
+				<p><a href="#" class="select-text text-muted" data-selector="#plantillacode1">Seleccionar Todo</a></p>
+				<a href="../plantilla/"><img src="../image/plantilla2.png" alt="Plantilla 2" class="img-thumbnail"></a>
+				<div class="highlight">
+					<code id="plantillacode2">
+						&lt;!DOCTYPE html&gt; <br>
+						&lt;html lang="en"&gt; <br>
+						&lt;head&gt; <br>
+						&lt;meta charset="UTF-8"&gt; <br>
+						&lt;meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"&gt; <br>
+						&lt;title&gt;Flex Desing - Inicio&lt;/title&gt;
+						&lt;link rel="stylesheet" type="text/css" href="css/flexdesign.css"&gt; <br>
+						&lt;link rel="stylesheet" type="text/css" href="css/flexdesign-2.css"&gt; <br>
+						&lt;link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css"&gt; <br>
+						&lt;script src="js/jquery-3.2.1.min.js"&gt;&lt;/script&gt; <br>
+						&lt;/head&gt; <br>
+						&lt;body&gt; <br>
+						&lt;nav id="navbar" class="navbar"&gt; <br>
+						&lt;a class="navbar-logo" href="#"&gt;Flex Desing&lt;/a&gt; <br>
+						&lt;button type="button" class="navbar-toggle"&gt;&lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;&lt;/button&gt; <br>
+						&lt;div class="navbar-collapse"&gt;  <br>	
+						&lt;ul class="navbar-nav"&gt; <br>
+						&lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#nosotros"&gt;Nosotros&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#portafolio"&gt;Portafolio&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;/ul&gt; <br>
+						&lt;/div&gt; <br>
+						&lt;/nav&gt; <br>
+						&lt;header id="inicio" class="header"&gt; <br>
+
+						&lt;h1&gt;Flex Design&lt;/h1&gt; <br>
+						&lt;/header&gt; <br>
+						&lt;div class="section"&gt; <br>
+						&lt;a href="#"&gt;  &lt;img class="img-logo img-center" src="image/logo.png"&gt;&lt;/a&gt; <br>
+
+						&lt;/div&gt; <br>
+						&lt;footer class="footer"&gt; <br>
+						&lt;p class="footer-brand"&gt;Flex Desing&lt;/p&gt; <br>
+						&lt;p&gt;Flex Desing Desarrollado con &lt;i class="fa fa-heart" aria-hidden="true"&gt;&lt;/i&gt; por Pepe e Iván &copy; 2017&lt;/p&gt; <br>
+						&lt;ul class="footer-menu"&gt; <br>
+						&lt;li class="item"&gt;&lt;a href="#inicio" class="link-white"&gt;Inicio&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="item"&gt;&lt;a href="#nosotros" class="link-white"&gt;Nosotros&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="item"&gt;&lt;a href="#portafolio" class="link-white"&gt;Portafolio&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;li class="item"&gt;&lt;a href="#contacto" class="link-white"&gt;Contacto&lt;/a&gt;&lt;/li&gt; <br>
+						&lt;/ul&gt; <br>
+						&lt;button name="button" id="myBtn" class="scrollToTop fa fa-chevron-up" aria-hidden="true"&gt;&lt;/button&gt; <br>
+
+						&lt;/footer&gt; <br>
+						&lt;script src="js/flexdesign.js"&gt;&lt;/script&gt; <br>
+						&lt;/body&gt; <br>
+						&lt;/html&gt; <br>
+					</code>
+				</div>
+				<p><a href="#" class="select-text text-muted" data-selector="#plantillacode2">Seleccionar Todo</a></p>
+			</div>
+			<div class="section" id="diseno">
+				<h3>Diseño</h3>
+				Flexdesign cuenta con un diseño enfocado al uso interactivo con interfaces amigables y responsivas.
+				Con una paleta de colores minimalistas y combinables entre sí.
+				Su diseño se adapta a las distintas resoluciones comerciales en el mercado, pc, Tablet y smartphone, brindando una vista agradable y de fácil interacción, por lo que resulta una navegación intuitiva y accesible
+
+				<div class="section">
+					<h4>Contenedores</h4>
+					<p>Los contenedores son el elemento de diseño más básico en Flex Design y son necesarios al usar nuestro sistema. 
+						Elija entre un contenedor responsvo de ancho de fluido (lo que significa que es 100% ancho todo el tiempo).
+					La mayoría de los diseños requieren un contenedor y para un mejor diseño recomendamos anidar contenedores.</p>
+
+					<h4>container</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="container"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+						</code>
+					</div>
+					<img src="../image/container.png" alt="container">
+					<h4>Section</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="section"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;section&gt; <br>
+							&lt;!-- Contenido aqui --"&gt; <br>
+							&lt;/section&gt; <br>
+						</code>
+					</div>
+					<h4>mid-container-left mid-container-right</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="container"&gt;
+							&lt;div class="mid-container-left"&gt;
+							&lt;!-- Contenido aqui --&gt;
+							&lt;/div&gt;
+							&lt;div class="mid-container-right"&gt;
+							&lt;!-- Contenido aqui --&gt;
+							&lt;/div&gt;
+							&lt;/div&gt;
+						</code>
+					</div>
+					<img src="../image/diseno1.png" alt="mid-container-left mid-container-right">
+					<h4>menu-left content-menu</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="container"&gt; <br>
+							&lt;div class="menu-left"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class="content-menu"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;/div&gt; <br>
+						</code>
+					</div>
+					<img src="../image/diseno2.png" alt="menu-left content-menu">
+					<h4>column-left column-center column-right</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="container"&gt; <br>
+							&lt;div class="column-left"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class="column-center"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;div class="column-right"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;/div&gt; <br>
+						</code>
+					</div>
+					<img src="../image/diseno3.png" alt="column-left column-center column-right">
+					<h4>aside</h4>
+					<div class="highlight">
+						<code>
+							&lt;div class="container"&gt; <br>
+							&lt;section class="section"&gt; <br>
+							&lt;!-- Contenido aqui --&gt;<br>
+							&lt;/section&gt;<br>
+							&lt;aside class="bg-default"&gt; <br>
+							&lt;ul&gt; <br>
+							&lt;li&gt;&lt;a href="#"&gt;Elemento&lt;/a&gt;&lt;/li&gt; <br>
+							&lt;li&gt;&lt;a href="#"&gt;Elemento&lt;/a&gt;&lt;/li&gt; <br>
+							&lt;/ul&gt; <br>
+							&lt;/aside&gt; <br>
+							&lt;/div&gt; <br>
+						</code>
+					</div>
+					<img src="../image/diseno4.png" alt="column-left column-center column-right">
+					<h4>parallax</h4>
+					<p>Te explicamos qué es el Parallax, ese efecto que al entrar en una web, hacer scroll el fondo parece moverse a una velocidad distinta que el contenido. <br>
+					Flex Design implementa parallax como un contenedor que posiciona una imagen de fondo, sin afectar al contenido.</p>
+					<section class="section">
+						<div class="parallax">
+							<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nisi praesentium earum odio ipsa sequi repellat velit! Temporibus, placeat ipsam facere assumenda, obcaecati rem fugiat veniam accusantium reiciendis, in debitis.</p>
+						</div>
+					</section>
+					<div class="highlight">
+						<code>
+							&lt;section class="section"&gt; <br>
+							&lt;div class="parallax"&gt; <br>
+							&lt;!-- Contenido aqui --&gt; &lt;br&gt; <br>
+							&lt;/div&gt; <br>
+							&lt;/section&gt; <br>
+							&lt;!-- Editar el flexdesign.css  para usar una imagen alternativa--&gt; <br>
+							&lt;style&gt; <br>
+							section .parallax, .section .parallax {  <br>
+							background-image: url("../image/img_parallax.jpg"); <br>
+						}
+						&lt;/style&gt; <br>
+					</code>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="section" id="contenido">
+			<h3>Contenido</h3>
+			Utilizamos normalización de diseño para elementos en HTML con estilos opcionales y predeterminados usando selectores, adicionalmente agregamos clases para diferentes selectores.
+			Se pueden combinar entre sí.
+
+			<div class="section">
+				<h4>Tipografía</h4>
+				<p>Utilizamos por defecto la funete fontin sans, la cual nos otorga una fuente con un diseño mas visual, respetando una buena lectura y letras sin diseños exagerados, y principalmente legible</p>
+				<h4>Fuentes</h4>
+				<div class="highlight">
+					<code id="fontawesomecode">
+						//La ruta de las fuentes debe estar en la misma ubicacion que el flexdesign.css <br>
+						//Puede usar una ruta alternativa editando el url <br>
+						@font-face { font-family: Fontin Sans Regular; src: url('fonts/Fontin_Sans_R_45b.otf'); }  <br>
+						//Ruta alternativa <br>
+						@font-face { font-family: Fontin Sans Regular; src: url('carpeta_alternativa/Fontin_Sans_R_45b.otf'); }<br>
+					</code>
+					<p><a href="#" class="select-text text-muted" data-selector="#fontawesomecode">Seleccionar Todo</a></p>
+				</div>
+				<h4>Párrafos</h4>
+				<div class="container">
+					<div class="mid-container-left">
+						<p>contenido aquí</p>
+						<p class="capital">contenido aquí</p>
+						<p class="text-center">contenido aquí</p>
+						<p class="text-left">contenido aquí</p>
+						<p class="text-right">contenido aquí</p>
+						<p class="text-justify">contenido aquí</p>
+						<p class="strong">contenido aquí</p>
+						<p class="text-black" >contenido aquí</p>
+						<p class="text-white" >contenido aquí</p>
+						<p class="text-ink" >contenido aquí</p>
+						<p class="text-purple" >contenido aquí</p>
+						<p class="text-orange" >contenido aquí</p>
+					</div>
+					<div class="mid-container-right">
+						<div class="highlight">
+							<code>
+								&lt;p&gt; class="capital">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-center">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-left">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-rigt">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-justify">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="strong">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-black">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-white">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-ink">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-purple">contenido aquí&lt;/p&gt; <br>
+								&lt;p&gt; class="text-orange">contenido aquí&lt;/p&gt; <br>
+							</code>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+			<hr>
+			<div class="section">
+				<h4>Imágenes</h4>
+				<p>Documentación y ejemplos para usar imágenes con un comportamiento responsivo (para que nunca se vuelvan más grandes que sus elementos principales) y agregarles estilos opcionales.</p>
+				<h5>img-center</h5>
+				<img class="img-center" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen1">
+				<h5>img-responsive</h5>
+				<img class="img-responsive" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen2">
+				<h5>img-thumbnail</h5>
+				<img class="img-thumbnail" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen3">
+				<h5>link img-thumbnail</h5>
+				<a href="#"><img class="img-thumbnail" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen3"></a>
+				<div class="highlight">
+					<code id="imagescode">
+						&lt;img class="img-center" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen1"&gt; <br>
+						&lt;section class="section"&gt; <br>
+						&lt;!-- Contenido aqui --&gt; <br>
+						&lt;img class="img-responsive" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen2"&gt; <br>
+						&lt;/section&gt; <br>
+						&lt;img class="img-thumbnail" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen3"&gt; <br>
+						&lt;a href="#"&gt;&lt;img class="img-thumbnail" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="imagen3"&gt;&lt;/a&gt;
+					</code>
+				</div>
+				<p><a href="#" class="select-text text-muted" data-selector="#imagescode">Seleccionar Todo</a></p>
+				<hr>
+			</div>
+		</div>
+		<div class="section" id="componentes">
+			<h3>Componentes</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione minima corrupti inventore animi itaque repellendus incidunt explicabo quidem mollitia porro quae quas molestiae, omnis natus soluta atque consequatur exercitationem?
+			<div class="section bg-black">
+				<h4>Alertas</h4>
+				<p>Manejamos las distintas alertas añadiendo colores acorde al contexto de las mismas, haciendo más fácil la comprensión de cada una de ellas</p>
+				<div class="container">
+
+					<div class="alert-default">
+						<span class="closebtn" >&times;</span> 
+						<h3 class="text-default">Default</h3>
+						<p class="text-default"> <strong>Alert Default</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse, minus voluptatum blanditiis illum neque quo architecto reprehenderit inventore? Facere, enim fugiat molestiae dolor, neque incidunt cum provident facilis doloribus.</p>
+					</div>
+					<div class="alert-warning">
+						<span class="closebtn" >&times;</span> 
+						<h3 class="text-warning">Warning</h3>
+						<p class="text-warning"> <strong>Alert Warning</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quia, vel ducimus quae consequatur nihil eum autem dolores dolor, reiciendis quam quidem a laboriosam at repellat libero. Magni ab, repellat.</p>
+					</div>
+					<div class="alert-success">
+						<span class="closebtn" >&times;</span> 
+						<h3 class="text-alert">Success</h3>
+						<p class="text-alert"> <strong>Alert Success</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui assumenda officia atque distinctio in saepe adipisci. At rerum repellat ut voluptates aspernatur, ipsam praesentium alias veniam eligendi id, ea ratione.</p>
+					</div>
+					<div class="alert-info">
+						<span class="closebtn" >&times;</span> 
+						<h3 class="text-info">Info</h3>
+						<p class="text-info"><strong>Alert Info</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique ab, quaerat voluptatem cupiditate quam doloremque doloribus vel rerum quisquam nesciunt, sunt nobis. Asperiores veniam iusto est, consequuntur nesciunt maiores?</p>
+					</div>
+					<div class="alert-danger">
+						<span class="closebtn" >&times;</span> 
+						<h3 class="text-danger">Danger</h3>
+						<p class="text-danger"><strong>Alert Danger</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta explicabo, iste placeat eius sint. Voluptas quae, cumque est minima eos suscipit totam, fugit a laudantium. Quidem dolorum perferendis, atque molestiae.</p>
+					</div>
+
+				</div>
+				<div class="highlight">
+					<code id="imagescode">
+						&lt;div class="alert-default"&gt;<br>
+						&lt;span class="closebtn" &gt;&times;&lt;/span&gt;<br> 
+						&lt;h3 class="text-default"&gt;Default&lt;/h3&gt;<br>
+						&lt;p class="text-default"&gt; &lt;strong&gt;Alert Default&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse, minus voluptatum blanditiis illum neque quo architecto reprehenderit inventore? Facere, enim fugiat molestiae dolor, neque incidunt cum provident facilis doloribus.&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="alert-warning"&gt;<br>
+						&lt;span class="closebtn" &gt;&times;&lt;/span&gt;<br> 
+						&lt;h3 class="text-warning"&gt;Warning&lt;/h3&gt;<br>
+						&lt;p class="text-warning"&gt; &lt;strong&gt;Alert Warning&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quia, vel ducimus quae consequatur nihil eum autem dolores dolor, reiciendis quam quidem a laboriosam at repellat libero. Magni ab, repellat.&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="alert-success"&gt;<br>
+						&lt;span class="closebtn" &gt;&times;&lt;/span&gt;<br> 
+						&lt;h3 class="text-alert"&gt;Success&lt;/h3&gt;<br>
+						&lt;p class="text-alert"&gt; &lt;strong&gt;Alert Success&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui assumenda officia atque distinctio in saepe adipisci. At rerum repellat ut voluptates aspernatur, ipsam praesentium alias veniam eligendi id, ea ratione.&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="alert-info"&gt;<br>
+						&lt;span class="closebtn" &gt;&times;&lt;/span&gt;<br> 
+						&lt;h3 class="text-info"&gt;Info&lt;/h3&gt;<br>
+						&lt;p class="text-info"&gt;&lt;strong&gt;Alert Info&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique ab, quaerat voluptatem cupiditate quam doloremque doloribus vel rerum quisquam nesciunt, sunt nobis. Asperiores veniam iusto est, consequuntur nesciunt maiores?&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="alert-danger"&gt;<br>
+						&lt;span class="closebtn" &gt;&times;&lt;/span&gt;<br> 
+						&lt;h3 class="text-danger"&gt;Danger&lt;/h3&gt;<br>
+						&lt;p class="text-danger"&gt;&lt;strong&gt;Alert Danger&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta explicabo, iste placeat eius sint. Voluptas quae, cumque est minima eos suscipit totam, fugit a laudantium. Quidem dolorum perferendis, atque molestiae.&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+					</code>
+				</div>
+				<hr>
+			</div>
+			<div class="section">
+				<h4>Botones</h4>
+				<p>Los botones tienen un diseño minimalista añadiendo la paleta de colores combinables</p>
+				<div class="container">
+					<button class="button-default" >ejemplo</button>
+					<button class="button-default-black-hover" >ejemplo</button>
+
+				</div>
+				<div class="highlight">
+					<code id="imagescode">
+						&lt;button class="button-default" &gt;ejemplo&lt;/button&gt; <br>
+						&lt;button class="button-default-black-hover" &gt;ejemplo&lt;/button&gt; <br>	
+					</code>
+				</div>
+				<hr>
+			</div>
+			<div class="section">
+				<h4>Card</h4>
+				<p>Se añade un contorno a un div de tamaño fijo, teniendo como principal función el resaltarlo</p>
+				<div class="mid-container-left">
+					<div class="card">
+				<a href="#"><img class="img-card" src="http://www.lorempixel.com/500/500"></a>
+				<div class="card-container">
+					<h4 class="strong">Mr. Flex</h4> 
+					<p class="text-muted">Engineer</p> 
+				</div>
+			</div>
+		</div>
+		<div class="mid-container-right">
+			<div class="highlight">
+					<code id="imagescode">
+						&lt;div class="card"&rt;<br>
+				&lt;a href="#"&rt;&lt;img class="img-card" <br>
+				src="http://www.lorempixel.com/500/500"&rt;&lt;/a&rt;<br>
+				&lt;div class="card-container"&rt;<br>
+					&lt;h4 class="strong"&rt;Mr. Flex&lt;/h4&rt; <br>
+					&lt;p class="text-muted"&rt;Engineer&lt;/p&rt; <br>
+				&lt;/div&rt;<br>
+			&lt;/div&rt;<br>
+				</code>
+			</div>
+		</div>
+
+				<hr>
+			</div>
+			<div class="section">
+				<h4>Formularios</h4>
+				<p>Se incorpora un diseño con colores y aspecto similar en inputs, checkbox y radio, como principal propósito el tener un diseño amigable y vistoso</p>
+				<div class="container">
+					<div class="mid-container-left">
+						<div class="form-field">
+							<label class="label">Nombre</label>
+							<input class="input" type="text" placeholder="Nombre" required="">	
+						</div>
+						<div class="form-field">
+							<label class="label">Apellido</label>
+							<input class="input" type="text" placeholder="Apellido(s)" required="">		
+						</div>
+						<div class="form-field">
+							<label class="label">E-mail</label>
+							<input class="input" type="email" name="email" placeholder="ejemplo@gmail.com" required="">		
+						</div>
+						<div class="form-field">
+							<textarea class="textarea textarea-no-resize" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse.</textarea>
+							<textarea class="textarea textarea-vertical" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse.</textarea>
+							<textarea class="textarea textarea-horizontal" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse.</textarea>
+						</div>	
+						<div class="form-field">
+							<button class="button-default" type="submit">Enviar</button>		
+						</div>
+						<div class="form-field">
+							<button type="reset">Limpiar</button>		
+						</div>
+						<div class="div-center text-black">
+							<h2>Checkbox</h2>
+							<label class="checkbox">Example 1
+								<input type="checkbox" checked="checked">
+								<span class="check"></span>
+							</label>
+							<label class="checkbox">Example 2
+								<input type="checkbox">
+								<span class="check"></span>
+							</label>
+							<label class="checkbox">Example 3
+								<input type="checkbox">
+								<span class="check"></span>
+							</label>
+							<label class="checkbox">Example 4
+								<input type="checkbox">
+								<span class="check"></span>
+							</label>
+						</div>
+						<div class="div-center text-black">
+							<h2>Custom Radio Buttons</h2>
+							<label class="radio">One
+								<input type="radio" checked="checked" name="radio">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Two
+								<input type="radio" name="radio">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Three
+								<input type="radio" name="radio">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Four
+								<input type="radio" name="radio">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="mid-container-right">
+						<div class="highlight">
+							<code id="imagescode">
+								&lt;div class="form-field"&rt;<br>
+								&lt;label class="label"&rt;Nombre&lt;/label&rt;<br>
+								&lt;input class="input" type="text" placeholder="Nombre" required=""&rt;<br>
+								&lt;/div&rt;<br>
+								&lt;div class="form-field"&rt;<br>
+								&lt;label class="label"&rt;Apellido&lt;/label&rt;<br>
+								&lt;input class="input" type="text" placeholder="Apellido(s)" required=""&rt;<br>	
+								&lt;/div&rt;<br>
+								&lt;div class="form-field"&rt;<br>
+								&lt;label class="label"&rt;E-mail&lt;/label&rt;<br>
+								&lt;input class="input" type="email" name="email" placeholder="ejemplo@gmail.com" required=""&rt;<br>	
+								&lt;/div&rt;<br>
+								&lt;div class="form-field"&rt;<br>
+								&lt;textarea class="textarea textarea-no-resize" rows="4" cols="50"&rt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse.&lt;/textarea&rt;<br>
+								&lt;/div&rt;<br>
+								&lt;div class="form-field"&rt;<br>
+								&lt;button class="button-default" type="submit"&rt;Enviar&lt;/button&rt;<br>	
+								&lt;/div&rt;<br>
+								&lt;div class="form-field"&rt;<br>
+								&lt;button type="reset"&rt;Limpiar&lt;/button&rt;<br>		
+								&lt;/div&rt;<br>
+								&lt;div class="div-center text-black"&rt;<br>
+								&lt;h2&rt;Checkbox&lt;/h2&rt;<br>
+								&lt;label class="checkbox"&rt;Example 1
+								&lt;input type="checkbox" checked="checked"&rt;<br>
+								&lt;span class="check"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="checkbox"&rt;Example 2
+								&lt;input type="checkbox"&rt;<br>
+								&lt;span class="check"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="checkbox"&rt;Example 3
+								&lt;input type="checkbox"&rt;<br>
+								&lt;span class="check"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="checkbox"&rt;Example 4
+								&lt;input type="checkbox"&rt;<br>
+								&lt;span class="check"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;/div&rt;<br>
+								&lt;div class="div-center text-black"&rt;<br>
+								&lt;h2&rt;Custom Radio Buttons&lt;/h2&rt;<br>
+								&lt;label class="radio"&rt;One
+								&lt;input type="radio" checked="checked" name="radio"&rt;<br>
+								&lt;span class="checkmark"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="radio"&rt;Two
+								&lt;input type="radio" name="radio"&rt;<br>
+								&lt;span class="checkmark"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="radio"&rt;Three
+								&lt;input type="radio" name="radio"&rt;<br>
+								&lt;span class="checkmark"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;label class="radio"&rt;Four
+								&lt;input type="radio" name="radio"&rt;<br>
+								&lt;span class="checkmark"&rt;&lt;/span&rt;<br>
+								&lt;/label&rt;<br>
+								&lt;/div&rt;<br>
+							</code>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="section">
+					<h4>Barra de Navegación</h4>
+					<p>La barra tiene un aspecto sencillo, resaltando cada una de las secciones, con la función de ocultarse y desplegarse según la resolución del dispositivo</p>
+					<div class="container">
+						<nav id="navbar" class="navbar">
+		<a class="navbar-logo" href="../">Flex Desing</a>
+		<button type="button" class="navbar-toggle"><i class="fa fa-bars" aria-hidden="true"></i><span class="navbar-toggler-icon"></span></button>
+		<div class="navbar-collapse"> 	
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+				
+						<div class="highlight">
+						<code id="imagescode">
+							&lt;nav id="navbar" class="navbar"&rt;<br>
+		&lt;a class="navbar-logo" href="../"&rt;Flex Desing&lt;/a&rt;<br>
+		&lt;button type="button" class="navbar-toggle"&rt;&lt;i class="fa fa-bars" aria-hidden="true"&rt;&lt;/i&rt;&lt;span class="navbar-toggler-icon"&rt;&lt;/span&rt;&lt;/button&rt;<br>
+		&lt;div class="navbar-collapse"&rt; <br>	
+			&lt;ul class="navbar-nav"&rt;<br>
+				&lt;li class="nav-item"&rt;&lt;a class="nav-link active" href="#inicio"&rt;<br>Inicio&lt;/a&rt;&lt;/li&rt;<br>
+				&lt;li class="nav-item"&rt;&lt;a class="nav-link" href="#nosotros"&rt;Nosotros&lt;/a&rt;&lt;/li&rt;<br>
+				&lt;li class="nav-item"&rt;&lt;a class="nav-link" href="#portafolio"&rt;Portafolio&lt;/a&rt;&lt;/li&rt;<br>
+				&lt;li class="nav-item"&rt;&lt;a class="nav-link" href="#contacto"&rt;Contacto&lt;/a&rt;&lt;/li&rt;<br>
+			&lt;/ul&rt;<br>
+		&lt;/div&rt;<br>
+	&lt;/nav&rt;<br>
+						</code>
+						</div>
+					
+
+					</div>
+					<hr>
+				</div>
+			</div>
+			
+	</div>
+</div>
+
+<footer id="footer">
+	<p class="footer-brand">Flex Desing</p>
+	<p>Flex Desing Desarrollado con <i class="fa fa-heart" aria-hidden="true"></i> por Pepe e Iván &copy; 2017</p>
+	<ul class="footer-menu">
+		<li class="item"><a href="../" class="link-white">Inicio</a></li>
+		<li class="item"><a href="./" class="link-white">Documentación</a></li>
+		<li class="item"><a href="../demo/" class="link-white">Demo</a></li>
+	</ul>
+	<button name="button" id="myBtn" class="scrollToTop fa fa-chevron-up" aria-hidden="true"></button>
+
+</footer>
+<script src="../js/flexdesign.js"></script>
+</body>
+</html>

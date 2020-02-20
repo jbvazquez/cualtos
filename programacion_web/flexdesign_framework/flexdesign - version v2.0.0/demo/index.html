@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="../image/favicon.png">
+	<title>Flex Desing - Inicio</title>
+	<link rel="stylesheet" type="text/css" href="../css/flexdesign.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<nav id="navbar" class="navbar">
+		<a class="navbar-logo" href="../">Flex Desing</a>
+		<button type="button" class="navbar-toggle"><i class="fa fa-bars" aria-hidden="true"></i><span class="navbar-toggler-icon"></span></button>
+		<div class="navbar-collapse"> 	
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header id="inicio" class="header">
+		<h1>Flex Design</h1>
+	</header>
+	<div class="container">
+		<section id="nosotros">
+			<h2>Nosotros</h2>
+			<div class="card">
+				<a href="#"><img class="img-card" src="http://www.lorempixel.com/500/500"></a>
+				<div class="card-container">
+					<h4 class="strong">Mr. Flex</h4> 
+					<p class="text-muted">Engineer</p> 
+				</div>
+			</div>
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptatibus quaerat veniam placeat, assumenda eum tempore quos cum possimus saepe consectetur dolorum sequi, repellat, officia natus, veritatis magnam asperiores molestiae.</p>
+		</section>
+		<section id="portafolio" class="bg-black section">
+			<h2 class="text-white">Portafolio</h2>	
+			<div id="zoom-container">
+				<img class="img-responsive" src="../image/apple_mountain-wallpaper-1920x1080.jpg" alt="Imagen Responsiva">
+			</div>
+			<article class="text-center">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis, explicabo veritatis adipisci voluptatum optio neque minus et corrupti, ducimus blanditiis pariatur! Labore facilis reiciendis officia dolor deleniti placeat suscipit.</p>
+			</article>
+		</section>
+		<section id="contacto" class="section">
+			<div class="parallax">
+				<h2 class="text-white">Contacto</h2>
+				<form class="form" action="">
+					<div class="form-header">
+						<h3>Formulario</h3>
+					</div>
+					<div class="form-field">
+						<label class="label">Nombre</label>
+						<input class="input" type="text" placeholder="Nombre" required="">	
+					</div>
+					<div class="form-field">
+						<label class="label">Apellido</label>
+						<input class="input" type="text" placeholder="Apellido(s)" required="">		
+					</div>
+					<div class="form-field">
+						<label class="label">E-mail</label>
+						<input class="input" type="email" name="email" placeholder="ejemplo@gmail.com" required="">		
+					</div>
+					<div class="form-field">
+						<textarea class="textarea textarea-no-resize" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur blanditiis minus cum minima harum inventore quas iure aliquid ex ut, facilis eaque earum. Rerum eos, laudantium veniam vero esse.</textarea>
+					</div>	
+					<div class="form-field">
+						<button class="button-default" type="submit">Enviar</button>		
+					</div>
+					<div class="form-field">
+						<button type="reset">Limpiar</button>		
+					</div>
+					<div class="div-center text-black">
+						<h2>Checkbox</h2>
+						<label class="checkbox">Example 1
+							<input type="checkbox" checked="checked">
+							<span class="check"></span>
+						</label>
+						<label class="checkbox">Example 2
+							<input type="checkbox">
+							<span class="check"></span>
+						</label>
+						<label class="checkbox">Example 3
+							<input type="checkbox">
+							<span class="check"></span>
+						</label>
+						<label class="checkbox">Example 4
+							<input type="checkbox">
+							<span class="check"></span>
+						</label>
+					</div>
+					<div class="div-center text-black">
+						<h2>Custom Radio Buttons</h2>
+						<label class="radio">One
+							<input type="radio" checked="checked" name="radio">
+							<span class="checkmark"></span>
+						</label>
+						<label class="radio">Two
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+						</label>
+						<label class="radio">Three
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+						</label>
+						<label class="radio">Four
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section>
+			<h2>Alertas</h2>
+			<div class="alert-default">
+				<span class="closebtn" >&times;</span> 
+				<h3 class="text-default">Default</h3>
+				<p class="text-default"> <strong>Alert Default</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In esse, minus voluptatum blanditiis illum neque quo architecto reprehenderit inventore? Facere, enim fugiat molestiae dolor, neque incidunt cum provident facilis doloribus.</p>
+			</div>
+			<div class="alert-warning">
+				<span class="closebtn" >&times;</span> 
+				<h3 class="text-warning">Danger</h3>
+				<p class="text-warning"> <strong>Alert Warning</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quia, vel ducimus quae consequatur nihil eum autem dolores dolor, reiciendis quam quidem a laboriosam at repellat libero. Magni ab, repellat.</p>
+			</div>
+			<div class="alert-success">
+				<span class="closebtn" >&times;</span> 
+				<h3 class="text-alert">Success</h3>
+				<p class="text-alert"> <strong>Alert Success</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui assumenda officia atque distinctio in saepe adipisci. At rerum repellat ut voluptates aspernatur, ipsam praesentium alias veniam eligendi id, ea ratione.</p>
+			</div>
+			<div class="alert-info">
+				<span class="closebtn" >&times;</span> 
+				<h3 class="text-info">Info</h3>
+				<p class="text-info"><strong>Alert Info</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique ab, quaerat voluptatem cupiditate quam doloremque doloribus vel rerum quisquam nesciunt, sunt nobis. Asperiores veniam iusto est, consequuntur nesciunt maiores?</p>
+			</div>
+			<div class="alert-danger">
+				<span class="closebtn" >&times;</span> 
+				<h3 class="text-danger">Danger</h3>
+				<p class="text-danger"><strong>Alert Danger</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta explicabo, iste placeat eius sint. Voluptas quae, cumque est minima eos suscipit totam, fugit a laudantium. Quidem dolorum perferendis, atque molestiae.</p>
+			</div>
+			
+		</section>
+		<div>
+			<aside class="bg-default">
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<!-- <ul> 
+						<div class="sub-item">
+							<a  href="#">Inicio Rapido</a> 
+						</div>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JS</a></li>
+						<li><a href="#">Plantilla de Inicio</a></li>
+					</ul> -->
+					<li><a href="#portafolio">Portafolio</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+					
+				</ul>
+			</aside>
+		</div>
+		<footer id="footer">
+			<p class="footer-brand">Flex Desing</p>
+			<p>Flex Desing Desarrollado con <i class="fa fa-heart" aria-hidden="true"></i> por Pepe e Iván &copy; 2017</p>
+			<ul class="footer-menu">
+				<li class="item"><a href="#inicio" class="link-white">Inicio</a></li>
+				<li class="item"><a href="#nosotros" class="link-white">Nosotros</a></li>
+				<li class="item"><a href="#portafolio" class="link-white">Portafolio</a></li>
+				<li class="item"><a href="#contacto" class="link-white">Contacto</a></li>
+			</ul>
+			<button name="button" id="myBtn" class="scrollToTop fa fa-chevron-up" aria-hidden="true"></button>
+
+		</footer>
+		<script src="../js/flexdesign.js"></script>
+	</body>
+	</html>
