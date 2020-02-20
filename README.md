@@ -1,4 +1,4 @@
-# Computer Engineering CUALTOS 2014-2018 #
+# Computer Engineering CUALTOS #
 ## Author: Jose de Jesus Becerra Vazquez ##
 * Seminario de Traductores de Lenguaje 1
 * Inteligencia Artificial 2
