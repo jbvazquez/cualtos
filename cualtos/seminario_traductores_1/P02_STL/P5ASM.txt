@@ -1,0 +1,7 @@
+	ORG	0
+	ABA
+	BGND
+	LDAA	85
+	LDAA	$0055
+	LDX	$20
+	END

@@ -1,0 +1,6 @@
+		VALOR		ETIQUETA	CODOP	     OPERANDO
+CONTLOC		$0002		null		ABA		null
+CONTLOC		$0003		null		BGND		null
+CONTLOC		$0006		null		LDAA		85
+CONTLOC		$0009		null		LDAA		$0055
+CONTLOC		$000c		null		LDX		$20

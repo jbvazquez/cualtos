@@ -1,0 +1,11 @@
+;comentario número 1 =SEMINARIO=
+	ORG	%00001111
+Et1	equ	$ffFF
+dos 	LDAA	@4732
+	SWI
+	DS.b	%0011000011111100
+;comentario número 2!Traductores! Esta linea es mas de ochenta catracteres para demostrar de que si manda el error
+;comentario número 3
+tres	sWi
+cuatro Swingt  		 %00001111
+	End
